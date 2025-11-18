@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+ <!DOCTYPE html>
     <html>
     <head>
       <title>Análisis Estadístico - JPD Las Heras</title>
@@ -67,7 +67,7 @@
         function drawChartDelitos() {
           var data = google.visualization.arrayToDataTable([
             ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Robo', 18, 12],
+            ['Robo', 18, 13],
 ['Hurto Agra.', 12, 6],
 ['Robo A/F', 4, 7],
 ['Hurto', 4, 6],
@@ -95,8 +95,8 @@
 ['Miércoles', 6, 11],
 ['Jueves', 6, 5],
 ['Sábado', 8, 3],
+['Domingo', 4, 7],
 ['Martes', 8, 2],
-['Domingo', 4, 6],
 ['Viernes', 8, 1]
           ]);
           var options = {
@@ -116,7 +116,7 @@
             ['🌆 Noche (18:00 - 23:59)', 28, 11],
 ['🌤️ Mañana (06:00 - 11:59)', 12, 13],
 ['☀️ Tarde (12:00 - 17:59)', 12, 6],
-['🌙 Madrugada (00:00 - 05:59)', 0, 8]
+['🌙 Madrugada (00:00 - 05:59)', 0, 9]
           ]);
           var options = {
             title: 'Análisis por Rango Horario',
@@ -134,7 +134,7 @@
         function drawChartDependencias() {
           var data = google.visualization.arrayToDataTable([
             ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Cria_16', 32, 24],
+            ['Cria_16', 32, 25],
 ['Cria_36', 18, 12],
 ['Cria_43', 2, 0],
 ['Cria_56', 0, 2]
@@ -154,7 +154,7 @@
         function drawChartLugares() {
           var data = google.visualization.arrayToDataTable([
             ['Categoría', 'SEMANAL 1', 'SEMANAL 2'],
-            ['Vía Pública', 24, 20],
+            ['Vía Pública', 24, 21],
 ['Domicilio', 20, 15],
 ['Comercio', 6, 3],
 ['Establecimiento Educativo', 2, 0]
@@ -182,14 +182,14 @@
     <div class="summary-grid">
       <div class="summary-box">
         <div class="summary-title">Total Delitos</div>
-        <div class="summary-value">SEMANAL 1: 52 | SEMANAL 2: 38</div>
-        <div class="variation variation-down">▼ 27% (-14)</div>
+        <div class="summary-value">SEMANAL 1: 52 | SEMANAL 2: 39</div>
+        <div class="variation variation-down">▼ 25% (-13)</div>
       </div>
       <div class="summary-box">
       <div class="summary-title">Indicador de Estabilidad</div>
       <div class="summary-value">Baja</div>
       <div class="variation">La serie es irregular entre días; conviene monitorear picos y valles.</div>
-      <div style="font-size:11px;color:#555;margin-top:6px;">(CV=71% | ID=2.75 | fuera de control: 0/7 (límites ~ 0.0–12.4))</div>
+      <div style="font-size:11px;color:#555;margin-top:6px;">(CV=70% | ID=2.74 | fuera de control: 0/7 (límites ~ 0.0–12.7))</div>
       <div style="font-size:11px;color:#777;margin-top:2px;">Método: CV (coeficiente de variación), ID (índice de dispersión) y control ±3σ (límites basados en Poisson).</div>
 </div>
 
@@ -208,8 +208,8 @@
       
         <div class="summary-box">
           <div class="summary-title">Las Heras</div>
-          <div class="summary-value">SEMANAL 1: 52 | SEMANAL 2: 38</div>
-          <div class="variation variation-down">▼ 27% (-14)</div>
+          <div class="summary-value">SEMANAL 1: 52 | SEMANAL 2: 39</div>
+          <div class="variation variation-down">▼ 25% (-13)</div>
         </div>
       
         <div class="summary-box">
@@ -236,8 +236,8 @@
           <tr>
               <td>Robo</td>
               <td>18</td>
-              <td>12</td>
-              <td class="frio">▼ 33% (-6)</td>
+              <td>13</td>
+              <td class="frio">▼ 28% (-5)</td>
             </tr><tr>
               <td>Hurto Agra.</td>
               <td>12</td>
@@ -277,7 +277,7 @@
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de delitos muestra una tendencia ▼ 27%. El mayor aumento se registró en <strong>Robo A/F (▲ 75% (+3))</strong>. La mayor disminución fue en <strong>Robo en Banda (▼ 100% (-2))</strong>.</div>
+    <div class="conclusion">El análisis de delitos muestra una tendencia ▼ 25%. El mayor aumento se registró en <strong>Robo A/F (▲ 75% (+3))</strong>. La mayor disminución fue en <strong>Robo en Banda (▼ 100% (-2))</strong>.</div>
   
         
     <div class="header">📅 ANÁLISIS POR DÍA DE LA SEMANA</div>
@@ -314,15 +314,15 @@
               <td>3</td>
               <td class="frio">▼ 63% (-5)</td>
             </tr><tr>
+              <td>Domingo</td>
+              <td>4</td>
+              <td>7</td>
+              <td class="caliente">▲ 75% (+3)</td>
+            </tr><tr>
               <td>Martes</td>
               <td>8</td>
               <td>2</td>
               <td class="frio">▼ 75% (-6)</td>
-            </tr><tr>
-              <td>Domingo</td>
-              <td>4</td>
-              <td>6</td>
-              <td class="caliente">▲ 50% (+2)</td>
             </tr><tr>
               <td>Viernes</td>
               <td>8</td>
@@ -332,7 +332,7 @@
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de días de la semana muestra una tendencia ▼ 27%. El mayor aumento se registró en <strong>Miércoles (▲ 83% (+5))</strong>. La mayor disminución fue en <strong>Viernes (▼ 88% (-7))</strong>.</div>
+    <div class="conclusion">El análisis de días de la semana muestra una tendencia ▼ 25%. El mayor aumento se registró en <strong>Miércoles (▲ 83% (+5))</strong>. La mayor disminución fue en <strong>Viernes (▼ 88% (-7))</strong>.</div>
   
         
     <div class="header">🕒 ANÁLISIS POR RANGO HORARIO</div>
@@ -366,13 +366,13 @@
             </tr><tr>
               <td>🌙 Madrugada (00:00 - 05:59)</td>
               <td>0</td>
-              <td>8</td>
-              <td class="caliente">nuevo registro (+8)</td>
+              <td>9</td>
+              <td class="caliente">nuevo registro (+9)</td>
             </tr>
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de rangos horarios muestra una tendencia ▼ 27%. El mayor aumento se registró en <strong>🌙 Madrugada (00:00 - 05:59) (nuevo registro (+8))</strong>. La mayor disminución fue en <strong>🌆 Noche (18:00 - 23:59) (▼ 61% (-17))</strong>.</div>
+    <div class="conclusion">El análisis de rangos horarios muestra una tendencia ▼ 25%. El mayor aumento se registró en <strong>🌙 Madrugada (00:00 - 05:59) (nuevo registro (+9))</strong>. La mayor disminución fue en <strong>🌆 Noche (18:00 - 23:59) (▼ 61% (-17))</strong>.</div>
   
         
     <div class="header">📍 ANÁLISIS POR DEPENDENCIA</div>
@@ -391,8 +391,8 @@
           <tr>
               <td>Cria_16</td>
               <td>32</td>
-              <td>24</td>
-              <td class="frio">▼ 25% (-8)</td>
+              <td>25</td>
+              <td class="frio">▼ 22% (-7)</td>
             </tr><tr>
               <td>Cria_36</td>
               <td>18</td>
@@ -412,7 +412,7 @@
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de dependencias muestra una tendencia ▼ 27%. El mayor aumento se registró en <strong>Cria_56 (nuevo registro (+2))</strong>. La mayor disminución fue en <strong>Cria_43 (▼ 100% (-2))</strong>.</div>
+    <div class="conclusion">El análisis de dependencias muestra una tendencia ▼ 25%. El mayor aumento se registró en <strong>Cria_56 (nuevo registro (+2))</strong>. La mayor disminución fue en <strong>Cria_43 (▼ 100% (-2))</strong>.</div>
   
         
     <div class="header">🏠 ANÁLISIS POR TIPO DE LUGAR</div>
@@ -431,8 +431,8 @@
           <tr>
               <td>Vía Pública</td>
               <td>24</td>
-              <td>20</td>
-              <td class="neutro">▼ 17% (-4)</td>
+              <td>21</td>
+              <td class="neutro">▼ 13% (-3)</td>
             </tr><tr>
               <td>Domicilio</td>
               <td>20</td>
@@ -452,7 +452,7 @@
         </tbody>
       </table>
     </div>
-    <div class="conclusion">El análisis de tipos de lugar muestra una tendencia ▼ 27%. La mayor disminución fue en <strong>Establecimiento Educativo (▼ 100% (-2))</strong>.</div>
+    <div class="conclusion">El análisis de tipos de lugar muestra una tendencia ▼ 25%. La mayor disminución fue en <strong>Establecimiento Educativo (▼ 100% (-2))</strong>.</div>
   
 
         <!-- NUEVO: TABLA POR JEFATURA/GRUPO -->
@@ -485,8 +485,8 @@
       <tr>
         <td>Las Heras</td>
         <td>52</td>
-        <td>38</td>
-        <td class="variation-down">▼ 27% (-14)</td>
+        <td>39</td>
+        <td class="variation-down">▼ 25% (-13)</td>
       </tr>
       <tr>
         <td>Lavalle</td>
@@ -500,14 +500,14 @@
 
         <hr style="border: 1px solid #eee;">
         <div class="conclusion">
-          <p><strong>🏁 CONCLUSIÓN GENERAL:</strong> En conclusión, el período muestra un/a **disminución (▼ 27% (-14))** en la totalidad de hechos delictivos. Se recomienda prestar especial atención a las tendencias identificadas en los análisis detallados.</p>
+          <p><strong>🏁 CONCLUSIÓN GENERAL:</strong> En conclusión, el período muestra un/a **disminución (▼ 25% (-13))** en la totalidad de hechos delictivos. Se recomienda prestar especial atención a las tendencias identificadas en los análisis detallados.</p>
           
   <div class="header">Diagnóstico automático</div>
   <div style="border:1px solid #ddd;border-radius:8px;padding:14px;background:#fff;margin:10px 0;">
     <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap;">
       <div style="flex:1;min-width:280px">
         <div style="font-weight:bold;font-size:14px;margin-bottom:6px;">Indicador de Estabilidad: Baja</div>
-        <div style="font-size:12px;color:#555;">CV=71% | ID=2.75 | fuera de control: 0/7 (límites ~ 0.0–12.4)</div>
+        <div style="font-size:12px;color:#555;">CV=70% | ID=2.74 | fuera de control: 0/7 (límites ~ 0.0–12.7)</div>
       </div>
       <div style="flex:1;min-width:300px">
     <div style="position:relative;margin-top:4px;">
@@ -585,8 +585,8 @@
       <div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;">
         
       <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-        <div title="Domingo: 6"
-             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.5454545454545454);border:1px solid rgba(0,0,0,0.08);"></div>
+        <div title="Domingo: 7"
+             style="width:40px;height:24px;border-radius:6px;background:rgba(30,136,229, 0.6363636363636364);border:1px solid rgba(0,0,0,0.08);"></div>
         <div style="font-size:10px;color:#444;">Dom</div>
       </div>
     
